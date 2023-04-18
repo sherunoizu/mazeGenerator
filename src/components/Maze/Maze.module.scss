@@ -1,0 +1,37 @@
+.mazeContainer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  border: 1px solid #000;
+  grid-auto-flow: column;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100%;
+  aspect-ratio: 1;
+
+  &.top {
+    border-top: 1px solid #000;
+  }
+
+  &.bottom {
+    border-bottom: 1px solid #000;
+  }
+
+  &.left {
+    border-left: 1px solid #000;
+  }
+
+  &.right {
+    border-right: 1px solid #000;
+  }
+}
+
+.start {
+  background-color: #00cc00;
+}
+
+.end {
+  background-color: #ff0000;
+}
